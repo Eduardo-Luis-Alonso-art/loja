@@ -219,34 +219,13 @@ header nav ul li:hover::after{
 
     transform: translateX(200px);
     opacity: 0;
-    pointer-events: none;
-
     transition: transform 0.6s ease, opacity 0.6s ease;
     transition-delay: 0.7s;
 }
 
-.item.active .btn {
+.active .btn {
     transform: translateX(0);
     opacity: 1;
-    pointer-events: auto;
-}
-
-.btn:hover {
-    animation: button 1s infinite alternate;
-}
-
-.btn:active {
-    animation: none;
-    transform: scale(0.95);
-}
-
-@keyframes button {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.1);
-    }
 }
 
 .arrows{
